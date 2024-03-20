@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Персональный Сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="video-container">
+    <video autoplay loop muted>
+        <source src="objects/background-video.mp4" type="video/mp4">
+    </video>
+    <header>
+        <div class="social-icons">
+            <a href="https://vk.com/ididomoii" target="_blank"><img src="objects/vk.jpg" alt="VK"></a>
+            <a href="https://t.me/trenoid" target="_blank"><img src="objects/telegramm.jpg" alt="Telegram"></a>
+        </div>
+        
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="nav/blog.html">Блог</a></li>
+                <li><a href="nav/books.html">Прочитанные книги</a></li>
+                <li><a href="nav/courses.html">Пройденные курсы</a></li>
+                <li><a href="nav/resources.html">Рекомендуемые ресурсы</a></li>
+                <li><a href="#" id="contact-btn">Связаться</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="buttons">
+
+            <a href="URL_на_ваше_резюме" class="btn">Моё Резюме</a>
+        </section>
+
+        <section class="introduction">
+            <img src="objects/me.jpg" alt="Фото [Ваше Имя]" class="profile-photo">
+            <h2>О себе</h2>
+            <p>Привет! Меня зовут Рамис. Я начинающий Python разработчик, специализирующийся на backend разработке. Страстно увлечен изучением информационных технологий.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Мои навыки</h2>
+            <ul>
+                <li>Языки программирования: Python</li>
+                <li>Фреймворки и технологии: Django, Git, HTML, CSS, SQL, PosgreSQL</li>
+                <li>Инструменты и системы: GitHub</li>
+            </ul>
+        </section>
+
+
+
+    </main>
+</div>  
+
+
+<div id="contact-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Имя*" required>
+            <input type="text" id="phone" name="phone" placeholder="+7 (999) 999-99-99" required>
+            <select id="contact-method" name="contact-method">
+                <option value="">Как лучше с вами связаться</option>
+                <option value="email">Email</option>
+                <option value="phone">Телефон</option>
+                <option value="other">Другое</option>
+            </select>
+            <textarea id="message" name="message" placeholder="Комментарий" rows="4" required></textarea>
+            <label class="file-upload-container" for="file-upload">
+                <input id="file-upload" type="file" name="file-upload">
+                Прикрепите файл
+            </label>
+            <label>
+                <input type="checkbox" name="agree" required> Я согласен с политикой конфиденциальности и условиями договора-оферты
+            </label>
+            <button type="submit" class="submit-btn">Отправить запрос</button>
+        </form>
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
